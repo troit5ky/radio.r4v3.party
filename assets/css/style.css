@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: Ubuntu;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: linear-gradient(180deg, #42275a 0%, #734b6d 100%);
+    background-size: 1300% 1300%;
+    animation: bg-anim 20s ease-in-out infinite;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.titlebox {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 1.25em;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+#title {
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#subtitle {
+    color: #AFAFAF;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contentbox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: 1.5em;
+}
+
+.radbox {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 1.25em;
+    background: rgba(0, 0, 0, 0.15);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.radbox:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+@keyframes bg-anim {
+    0% {
+        background-position: 0 100%
+    }
+    50% {
+        background-position: 100% 0%
+    }
+    to {
+        background-position: 0 100%
+    }
+}
