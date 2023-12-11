@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    background: no-repeat url(assets/img/background.png);
+    background: no-repeat url(/assets/img/background.png);
     background-size: cover;
     color: var(--main-body-color);
 }
