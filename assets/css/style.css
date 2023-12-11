@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --main-color-card: 32, 32, 32;
+    --main-opacity-card: .7;
+    --main-opacity-card-hover: .4;
+    --main-body-color: rgb(255, 255, 255)
+}
+
 body {
     font-family: Ubuntu;
     margin: 0;
@@ -10,14 +17,13 @@ body {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    background: linear-gradient(180deg, #42275a 0%, #734b6d 100%);
-    background-size: 1300% 1300%;
-    animation: bg-anim 20s ease-in-out infinite;
-    color: white;
+    background: no-repeat url(assets/img/background.png);
+    background-size: cover;
+    color: var(--main-body-color);
 }
 
 a {
-    color: white;
+    color: var(--main-body-color);
     text-decoration: none;
 }
 
@@ -29,7 +35,7 @@ a {
     align-items: center;
     gap: 4px;
     border-radius: 1.25em;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(var(--main-color-card), var(--main-opacity-card));
 }
 
 #title {
@@ -68,23 +74,11 @@ a {
     align-items: center;
     gap: 8px;
     border-radius: 1.25em;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(var(--main-color-card), var(--main-opacity-card));
     transition: .2s;
     cursor: pointer;
 }
 
 .radbox:hover {
-    background: rgba(0, 0, 0, 0.25);
-}
-
-@keyframes bg-anim {
-    0% {
-        background-position: 0 100%
-    }
-    50% {
-        background-position: 100% 0%
-    }
-    to {
-        background-position: 0 100%
-    }
+    background: rgba(var(--main-color-card), var(--main-opacity-card-hover));
 }
