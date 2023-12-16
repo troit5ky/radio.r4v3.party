@@ -4,7 +4,9 @@
     --main-color-card: 32, 32, 32;
     --main-opacity-card: .7;
     --main-opacity-card-hover: .4;
-    --main-body-color: rgb(255, 255, 255)
+    --main-body-color: rgb(255, 255, 255);
+    --main-footer-color: rgb(178, 178, 178);
+    --main-footer-shadow-color: rgba(0, 0, 0, 1);
 }
 
 body {
@@ -83,4 +85,18 @@ a {
 
 .radbox:hover {
     background: rgba(var(--main-color-card), var(--main-opacity-card-hover));
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer a {
+    color: var(--main-footer-color);
+    text-decoration: none;
+}
+.footer span {
+    color: var(--main-footer-color);
+    text-shadow: 1px 1px 2px var(--main-footer-shadow-color);
 }
