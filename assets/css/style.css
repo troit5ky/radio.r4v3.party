@@ -90,6 +90,7 @@ a {
 .footer {
     position: fixed;
     bottom: 0;
+    text-align: center;
 }
 
 .footer a {
@@ -99,4 +100,5 @@ a {
 .footer span {
     color: var(--main-footer-color);
     text-shadow: 1px 1px 2px var(--main-footer-shadow-color);
+    font-size: .75em;
 }
