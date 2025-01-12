@@ -2,7 +2,7 @@
 
 :root {
     --main-color-card: 32, 32, 32;
-    --main-opacity-card: .25;
+    --main-opacity-card: .35;
     --main-opacity-card-hover: .35;
     --main-body-color: rgb(255, 255, 255);
     --main-footer-color: rgb(178, 178, 178);
