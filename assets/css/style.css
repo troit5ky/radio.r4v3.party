@@ -26,8 +26,12 @@ body {
     color: var(--main-body-color);
 }
 
+div {
+    white-space: pre-line;
+}
+
 a {
-    color: var(--main-body-color);
+    color: rgba(238, 238, 238, 255);
     text-decoration: none;
 }
 
